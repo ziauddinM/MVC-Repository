@@ -1,0 +1,54 @@
+﻿@model MvcApplication1.Models.Account
+
+@{
+    ViewBag.title = "Delete";
+    }
+
+
+    <h3>Are you sure you want to delete this?</h3>
+    <fieldset>
+        <legend>Account</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Name) :
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.phonenum)ber :
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.phonenum)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.email) address :
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.email)
+        </div>
+    
+        @*<div class="display-label">
+             @Html.DisplayNameFor(model => model.passwd)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.passwd)
+        </div>*@
+    
+        @*<div class="display-label">
+             @Html.DisplayNameFor(model => model.checkpasswd)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.checkpasswd)
+        </div>*@
+    </fieldset>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        <p>
+            <input type="submit" value="Delete" class="css_button" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    }
+

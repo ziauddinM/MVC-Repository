@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MvcApplication1.Models.Account>
+
+@{
+    ViewBag.title = "ViewAll";
+    }
+<p>
+    @Html.ActionLink("Create", "IndexPage")
+</p>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phonenum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.passwd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.checkpasswd)
+            </th>*@
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phonenum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.passwd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.checkpasswd)
+            </td>*@
+            <td>
+                   
+                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+                @*@Html.ActionLink("Details", "Details", new { id=item.id }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id=item.id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+

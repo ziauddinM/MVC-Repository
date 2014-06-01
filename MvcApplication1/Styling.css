@@ -1,0 +1,122 @@
+﻿
+       label {
+    color:#0c3501;
+    font-family:'Arial Rounded MT';
+    
+} 
+       h3 {
+            font-family:Impact,Verdana;
+            color:#0c3501;
+       }
+
+        p {
+            color: #0c3501;
+            font-family: impact;
+            font-size: 12px;
+        }
+
+        .text:active {
+            border: 1px solid #0c3501;
+            width: 145px;
+            height: 13px;
+            font-size: 12px;
+            padding: 4px 4px 4px 4px;
+            border-radius: 4px;
+        }
+
+        .text:focus {
+            outline: none;
+            border: 1px solid double;
+            box-shadow: 0px 0px 8px #7bc1f7;
+            padding: 4px 4px 4px 4px;
+            color: #0026ff;
+        }
+
+        .text {
+            outline: none;
+            border: 1px solid #0c3501;
+            box-shadow: 0px 0px 8px #7bc1f7;
+            padding: 4px 4px 4px 4px;
+            color:#0c3501;
+        }
+
+        body {
+            background-color: #b8f7a7;
+        }
+
+        .textarea {
+            background-color: aqua;
+            font-size: 13px;
+            font-style: italic;
+            visibility: hidden;
+        }
+
+        .textbximgcorrect {
+            background-image: url(MvcApplication1\Images\checkmark_icon.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            color: green;
+        }
+
+        .textbximgwrong {
+            background-image: url(MvcApplication1\Images\crossmark_icon.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            color: red;
+        }
+
+        .css_button {
+            padding: 7.5px 15px;
+            border: 1px solid #002900;
+            background-color: #00FF66;
+            box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 10px #9C0000;
+            border-radius: 13px;
+            color: #008F11;
+            font-size: 12px;
+            font-family: Georgia;
+            font-weight: bold;
+        }
+
+            .css_button:hover {
+                background: none;
+                background-color: #00FF66;
+                box-shadow: 1px 3px 3px 1px #024502;
+                border: 1px solid #9af29a;
+                color: #9E7F05;
+            }
+
+            .css_button:active {
+                top: 1px;
+                position: relative;
+            }
+
+        b {
+            position: relative;
+            font-size: small;
+            font-family: Arial;
+            color: #0c3501;
+            opacity: 0.6;
+        }
+
+            b:hover {
+                position: relative;
+                color: #5ef65e;
+                opacity: 1.0;
+            }
+
+        th{
+           color:#0c3501;
+           font-weight:bold;
+           font-family:'Times New Roman';
+        }
+
+        td{
+            color:green;
+            font-family:Calibri;
+            padding:2px 15px 2px 15px;
+        }
+
+       
+
+        
+       

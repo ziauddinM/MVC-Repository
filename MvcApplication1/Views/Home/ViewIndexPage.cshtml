@@ -1,0 +1,96 @@
+﻿@model MvcApplication1.Models.Account
+@{
+    ViewBag.title = "ViewIndexPage";
+}
+
+    <div style="padding: 20px 20px 40px 20px; height: 20px;">
+        <div style="float: left">
+            <table>
+                <tr>
+                    <td><b style="position: relative; font-size: x-large; font-family: Arial; color: #0c3501; opacity: 0.6">Business Clouds</b></td>
+                </tr>
+            </table>
+        </div>
+        <div style="float: right;">
+            <table>
+                <tr>
+                    <td style="padding-right: 20px;"><b>Home</b></td>
+                    <td style="padding-right: 20px;"><b>About Us</b></td>
+                    <td style="padding-right: 20px;"><b>Contact Us</b></td>
+                    <td style="padding-right: 20px;"><b>Queries and Complaints</b></td>
+                    <td style="padding-right: 20px;"><b>FAQs</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    @using (@Html.BeginForm("Register", "Home"))
+    {
+        <fieldset style="border-color:#002900;">
+            <legend><b style="font-family:Impact;">Register</b></legend>
+            <table style="width: 100%; padding: 30px 10px 10px 15%;">
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <p id="namep" class="ptag">Enter Name : </p>
+                    </td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        @Html.TextBox("Name", "",new { @class = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <p id="phonenump" class="ptag">Enter Phone Number : </p>
+                    </td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        @Html.TextBox("phonenum", "", new { @class = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <p id="emailaddp" class="ptag">Enter Email Address : </p>
+                    </td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        @Html.TextBox("email", "", new { @class = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <p id="passwdp" class="ptag">Enter Password : </p>
+                    </td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        @Html.Password("passwd", "", new { @class = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <p id="checkpasswdp" class="ptag">Confirm Password : </p>
+                    </td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        @Html.Password("checkpasswd", "", new { @class = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 15px 0px 15px;"></td>
+                    <td style="padding: 0px 15px 0px 15px;">
+                        <input name="submitdata" type="submit" value="submit" class="css_button" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <div style="color:red">
+                @Html.ValidationSummary()
+            </div>
+        </fieldset>
+    }
+    <div>
+        <b id="errorarea" style="display: none;"></b>
+        <textarea id="TextArea" rows="20" cols="30" class="textarea"></textarea>
+    </div>
+    <table>
+        <tr></tr>
+        <tr>
+            <td>
+                <b style="padding: 10px 10px 10px 10px; position: relative; font-size: xx-small; font-family: Arial; color: #0c3501; opacity: 0.5">All Rights Reserved&copy;</b>
+            </td>
+        </tr>
+    </table>

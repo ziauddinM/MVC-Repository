@@ -1,0 +1,53 @@
+﻿@model MvcApplication1.Models.Account
+
+@{
+    ViewBag.title = "Register";
+}
+
+<fieldset>
+    <legend>Login details</legend>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>*@
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.phonenum)
+    </div>*@
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phonenum)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>*@
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+    @*<div class="display-field">
+        @Html.DisplayFor(model => model.suffix)
+    </div>*@
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.passwd)
+    </div>*@
+    <div class="display-field">
+        @Html.DisplayFor(model => model.passwd)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.checkpasswd)
+    </div>*@
+    @*<div class="display-field">
+        @Html.DisplayFor(model => model.checkpasswd)
+    </div>*@
+</fieldset>
+<p>
+    
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id })|
+    @Html.ActionLink("Delete", "Delete", new { id = Model.id })
+    @Html.ActionLink("View All Accounts","ViewAll")
+   @*@Html.ActionLink("Know about us","About Us")*@
+</p>

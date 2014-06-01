@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" content="width=device-width" name="viewport"/>
+        <title>@ViewBag.Title</title>
+        <link href="~/Styling.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div style="padding: 20px 20px 40px 20px; height: 20px;">
+            <header>
+                <div style="float: left">
+                    <table>
+                        <tr>
+                            <td><b style="position: relative; font-size: x-large; font-family: Arial; color: #0c3501; opacity: 0.6">@Html.ActionLink("Business Clouds","")</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="float: right;">
+                    <table>
+                        <tr>
+                            <td style="padding-right: 20px;"><b>@Html.ActionLink("Home" ,"ViewAll")</b></td>
+                            <td style="padding-right: 20px;"><b>@Html.ActionLink("About Us","")</b></td>
+                            <td style="padding-right: 20px;"><b>@Html.ActionLink("Contact Us","")</b></td>
+                            <td style="padding-right: 20px;"><b>@Html.ActionLink("Queries and Complaints","")</b></td>
+                            <td style="padding-right: 20px;"><b>@Html.ActionLink("FAQs","")</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </header>
+        </div>
+        
+        <section id="main">
+
+                    @RenderBody()
+
+        </section>
+        <footer>
+            <div>
+                <table>
+                    <tr></tr>
+                    <tr>
+                        <td>
+                            <b style="padding: 10px 10px 10px 10px; position: relative; font-size: xx-small; font-family: Arial; color: #0c3501; opacity: 0.5">All Rights Reserved&copy;</b>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </body>
+</html>
